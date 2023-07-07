@@ -33,50 +33,47 @@ const Rules = () => {
                     </div>
                 </div>
             </div>
-            {/* <div>
-            <FormFeilds></FormFeilds>
-        </div>
-        <div>
-        <FeildsandConditions></FeildsandConditions>
-        </div> */}
 
-            {/* <button onClick={handleClick}>Load Another Component</button>
-      )} */}
-            {!showAnotherComponent && (
-                <div>
-                    
-                    <MultiStep
-                        activeStep={0}
-                        
-                        nextButton={{
-                            style: {
-                                'backgroundColor': '#E20074',
-                                'color': '#fff',
-                                'width': '150px',
-                                'height': '40px',
-                                'borderRadius': '3px',
-                                'border': '1px solid #e20074',
-                                // 'float': 'right',
-                                'margin': '5px'
-                            },
-                            title: 'Continue',
-                            disabled:true,
-                            onClick: nextClick // Call your custom function here
-                        }}
-                    >
-                        
-                        <FormFeilds title="Feilds"></FormFeilds>
-                        <FeildsandConditions title='FeildsandConditions'>
-                        </FeildsandConditions>
-                        <ReviewAndSubmit title="ReviewAndSubmit"></ReviewAndSubmit>
-                        
-                        
-                    </MultiStep>
-                    {showAnotherComponent && <CreatedRules />}
-                    
+            <div>
 
-                </div>)}
-            
+                <MultiStep
+                    activeStep={0}
+                    prevButton={{
+                        disabled:true,
+                        style: {
+                            'float': 'right',
+                            'margin': '5px',
+                            'border': '1px solid #e20074',
+                            'backgroundColor': 'transparent',
+                            'color': '#E20074',
+                            'width': '120px',
+                            'height': '40px',
+                            
+                        },
+                        title: 'Back'
+                    }}
+                    nextButton={{
+                        style: {
+                            'backgroundColor': '#E20074',
+                            'color': '#fff',
+                            'width': '150px',
+                            'height': '40px',
+                            'borderRadius': '3px',
+                            'border': '1px solid #e20074',
+                            'float': 'right',
+                            'margin': '5px'
+                        },
+                        title: 'Continue',
+                        disabled: false,
+                        onClick: nextClick // Call your custom function here
+                    }}>
+                    <FormFeilds title="Feilds"></FormFeilds>
+                    <FeildsandConditions title='FeildsandConditions'>
+                    </FeildsandConditions>
+                    <ReviewAndSubmit title="ReviewAndSubmit"></ReviewAndSubmit>
+                </MultiStep>
+            </div>
+
         </div>
     )
 }
