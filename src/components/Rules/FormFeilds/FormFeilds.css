@@ -1,0 +1,59 @@
+.form-buttons{
+    margin-bottom: 25px;
+}
+#radio-form-input>.form-check>.form-check-input {
+    /* border-radius: 50%; */
+    border-color: #898989;
+}
+#radio-form-input>.form-check>.form-check-input:checked{
+    border-color: #E20074;
+    background-color: #E20074;
+}
+.form-check-input:focus{
+    box-shadow: none;
+}
+.addrow-btn{
+    border: 1px solid #E20074;
+    color: #E20074;
+    font: normal normal normal 16px/22px Source Sans Pro;
+    letter-spacing: 0px;
+    width: 110px;
+    height: 40px;
+    box-shadow: none;
+    float: right;
+}
+.addrow-btn:hover, .addrow-btn:active, 
+.addrow-btn:focus, .addrow-btn:focus-visible
+.addrow-btn:focus-within, .addrow-btn:visited, .addrow-btn:target{
+    border: 1px solid #E20074;
+    background-color: #E20074;
+    color: #fff;
+}
+.addrow-btn>.add-icon{
+    padding: 0px 4px;;
+}
+.age-form-input{
+    width: 50%;
+}
+.form-table>thead>tr>th{
+    font: normal normal normal 14px/22px Source Sans Pro;
+    background-color: #FEF4F9;
+    border: 3px solid #FEF4F9;
+    color: #E20074;
+}
+.form-dropdown, .form-dropdown:hover, .form-dropdown:active, 
+.form-dropdown:focus, .form-dropdown:focus-visible
+.form-dropdown:focus-within, .form-dropdown:visited, .form-dropdown:target, .form-dropdown:first-child:active{
+    width: 300px;
+    height: 34px;
+    background-color: #FAFAFA;
+    box-shadow: none;
+    border: 1px solid #E0E0E0;
+    color: #202020;
+    text-align: left;
+    border-radius: 3px;
+}
+.delete-button{
+    border: none;
+    background-color: transparent;
+}

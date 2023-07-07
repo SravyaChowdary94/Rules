@@ -1,0 +1,43 @@
+.form-table>thead>tr>th{
+    font: normal normal normal 14px/22px Source Sans Pro;
+    background-color: #FEF4F9;
+    border: 3px solid #FEF4F9;
+    color: #E20074;
+}
+.dropdown-button::after{
+    color: #202020;
+    float: right;
+    margin-top: calc(100vh - 615px);
+}
+.dropdown-button{
+    width: 200px !important;
+}
+.feild-age-form-input{
+    width: 120px;
+}
+.condition-input{
+    display: flex;
+}
+.condition{
+    display: flex;
+    border: 1px solid #E0E0E0;
+    border-radius: 3px;
+    background-color: #fafafa;
+    padding: 11px;
+    margin: 0px 0px 25px 0px;
+}
+.condition-form-check{
+    width: 250px;
+    height: 38px;
+    border: 1px solid #E0E0E0;
+    border-radius: 3px;
+    margin: 0px 10px 0px 27px;
+}
+.form-check-input{
+    border-radius: 3px;
+    border: 1px solid #898989;
+}
+.form-check-label{
+    font-size: 16px;
+    font-family: 'Source Sans Pro Regular';
+}

@@ -1,0 +1,16 @@
+.new-rule-btn{
+    border: 1px solid #E20074;
+    color: #E20074;
+    background-color: #FEF4F9;
+    width: 160px;
+    height: 40px;
+    font:normal normal normal 16px/22px Source Sans Pro;
+}
+
+.new-rule-btn:hover,.new-rule-btn:active, .new-rule-btn:visited, .new-rule-btn:focus
+.new-rule-btn:focus-visible, .new-rule-btn:focus-within{
+    background-color: #E20074;
+    border : 1px solid #E20074;
+    color: #fff;
+    font: normal normal normal 16px/22px Source Sans Pro;
+}

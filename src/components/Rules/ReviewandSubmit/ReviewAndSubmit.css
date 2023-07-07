@@ -1,0 +1,11 @@
+.expand{
+    color: #E20074;
+    text-decoration: underline;
+}
+.edit-btn{
+    color: #202020;
+    font: normal normal normal 14px/20px Source Sans Pro;
+    border: transparent;
+    float: right;
+    text-decoration: underline;
+}
