@@ -10,7 +10,7 @@ const TableRow = ({ id, onDelete }) => {
         <tr>
             <th scope="row">{id}</th>
             <td>
-                <input type='text' placeholder='age' value="age" className="form-control age-form-input" />
+                <input type='text' placeholder='age' defaultValue="age" className="form-control age-form-input" />
             </td>
             <td>
                 <button className="btn btn-outline-secondary dropdown-toggle form-dropdown" type="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -39,9 +39,6 @@ const FormFeilds = () => {
     const deleteRow = (id) => {
         setRows((prevRows) => prevRows.filter((row) => row.id !== id));
     };
-    // const handleDelete = () => {
-    //     onDelete(id);
-    // };
     return (
         <div>
             <div className='container'>
@@ -49,11 +46,11 @@ const FormFeilds = () => {
                     <div className='col-6' >
                         <div id="radio-form-input">
                             <div className="form-check form-check-inline" >
-                                <input className="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1" />
+                                <input className="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" defaultValue="option1" />
                                 <label className="form-check-label" htmlFor="inlineRadio1">Upload Swagger</label>
                             </div>
                             <div className="form-check form-check-inline">
-                                <input className="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2" />
+                                <input className="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" defaultValue="option2" />
                                 <label className="form-check-label" htmlFor="inlineRadio2">Input Manually</label>
                             </div>
                         </div>
@@ -81,7 +78,7 @@ const FormFeilds = () => {
                             <tbody>
                                 <tr>
                                     <th scope="row">1</th>
-                                    <td><input type='text' placeholder='age' value="age" className="form-control age-form-input"></input></td>
+                                    <td><input type='text' placeholder='age' defaultValue="age" className="form-control age-form-input"></input></td>
                                     <td>
                                         <button className="btn btn-outline-secondary dropdown-toggle form-dropdown"
                                             type="button" data-bs-toggle="dropdown" aria-expanded="false">Integer</button>
@@ -90,8 +87,6 @@ const FormFeilds = () => {
                                         </ul>
                                     </td>
                                     <td>
-                                     {/*   <img src={path} />
-                                     <button onClick={handleDelete}></button> */}
                                      <button onClick={deleteRow} className='delete-button'><img src={path} /></button></td>
                                 </tr>
                                 {rows.map((row) => (
